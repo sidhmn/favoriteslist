@@ -1,0 +1,91 @@
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Chasing Embers Demo Version";
+}
+
+label {
+    font-family: "Chasing Embers Demo Version", sans-serif;
+    font-size: calc(100px + 1vh);
+    color: #6698d1;
+    padding-top: 10%;
+}
+
+input {
+    width: 50%;
+    align-self: center;
+    padding: 1% 0;
+    border: double #b2c4de 5px;
+    border-radius: 10px;
+    margin-bottom: 1%;
+    font-family: "Univers Next Pro", sans-serif;
+    font-size: calc(10px + 1vh);
+}
+
+body {
+    background-image: url("src/clouds.jpg");
+    background-size: 100%;
+    /*background-color: #5c83c5;*/
+}
+
+#page-wrapper {
+    background-color: whitesmoke;
+    text-align: center;
+    width: 70%;
+    margin: auto;
+    padding-bottom: 25%;
+}
+
+#inputSection {
+    display: flex;
+    flex-direction: column;
+}
+
+button {
+    width: 25%;
+    border: 4px #5c83c5 solid;
+    border-radius: 8px;
+    background-color: #b2c4de;
+    font-family: "Univers Next Pro", sans-serif;
+    font-weight: bold;
+    font-size: calc(12px + 1vh);
+    align-items: center;
+    padding-top: 0.5%;
+    color: #5c83c5;
+    margin-bottom: 2%;
+}
+
+ul {
+    text-align: left;
+    padding-left: 25%;
+    list-style-type: none;
+    color: #5c83c5;
+    font-family: "Univers Next Pro", sans-serif;
+    font-weight: bold;
+    font-size: calc(10px + 1vh);
+}
+
+ul li:before {
+    content: '\2605';
+    margin: 0 1em;
+}
+
+@media screen and (max-width: 900px) {
+
+    label {
+        padding-top: 40%;
+        font-size: calc(50px + 1vh);
+    }
+
+    button {
+        font-size: calc(4px + 1vh);
+    }
+
+    #page-wrapper {
+        padding-bottom: 83%;
+    }
+
+}
